@@ -12,7 +12,7 @@ jobs:
       - setup_remote_docker:
           docker_layer_caching: true #
       - run: "docker images"
-      - run: "./build.sh uci-messaging-server"
+      - run: "docker build . -t 123"
       - run: "docker images"
 
 workflows:
